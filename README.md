@@ -1,23 +1,23 @@
-📊 Fintech Analytics Project – PaySim Dataset
-
+**📊 Fintech Analytics Project – PaySim Dataset
+**
 This project demonstrates end-to-end analytics on mobile money transactions using SQL, SQLite, and Python. The goal is to derive actionable business insights such as user activity, churn, revenue growth, and behavioral patterns from transactional data.
 
 
-🔍 Objective
-
+**🔍 Objective
+**
 To analyze non-fraudulent mobile money transactions and build core KPIs like Monthly Transacting Users (MTU), Churn, Revenue Trends, and Power Users. Advanced SQL features such as **CTEs**, **JOINs**, and **Window Functions** are used to simulate real-world fintech analytics.
 
 
-📦 Dataset
-
+**📦 Dataset
+**
 - Name: PaySim – A Financial Transaction Simulation Dataset
 - Source: [Kaggle – PaySim Dataset](https://www.kaggle.com/datasets/ntnu-testimon/paysim1)
 - Format: CSV
 - Size: ~6.3 million rows
 - Description: A synthetic dataset simulating real-world mobile money transactions, including fraud and non-fraud cases.
 
-🛠️ Tools & Technologies
-
+**🛠️ Tools & Technologies
+**
 - Python (Jupyter Notebook)
 - SQLite (via Python’s `sqlite3` module)
 - SQL (CTEs, Window Functions, JOINs)
@@ -28,8 +28,8 @@ To analyze non-fraudulent mobile money transactions and build core KPIs like Mon
 
 📊 Key Performance Indicators (KPIs) – Implemented in SQL
 ---
-1. 📆 Monthly Transacting Users (MTU)
-Definition: Unique users who made at least one transaction in each month.
+**1. 📆 Monthly Transacting Users (MTU)
+**Definition: Unique users who made at least one transaction in each month.
 SQL Logic:
 SELECT (step / 720) + 1 AS month,
        COUNT(DISTINCT nameOrig) AS mtu
