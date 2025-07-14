@@ -103,8 +103,7 @@ SELECT
 6. 🪜 KPI – Window Function (Top Transaction Per User)
 Definition: Find the highest-value transaction per user.
 SQL Logic:
-
-**WITH ranked_txns AS (
+WITH ranked_txns AS (
     SELECT
         nameOrig AS user_id,
         amount,
@@ -118,7 +117,7 @@ SELECT *
 FROM ranked_txns
 WHERE rn = 1
 LIMIT 10;
-**---
+
 📈 Visualizations (Python)
 Built using matplotlib for presenting insights in a visual form:
 
